@@ -1,0 +1,7 @@
+@use "_variables";
+@use "_nav";
+
+h1 {
+	color: variables.$color-text;
+	background-color: variables.$color-primary;
+}

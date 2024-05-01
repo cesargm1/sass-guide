@@ -1,0 +1,29 @@
+// nav ul li a {
+// 	text-decoration: none;
+// }
+
+// nav {
+// 	background-color: blue;
+// 	padding: 1em;
+// 	ul {
+// 		color: black;
+// 	}
+// 	li {
+// 		list-style: none;
+// 	}
+// 	a {
+// 		text-decoration: none;
+// 		color: red;
+// 	}
+// }
+
+nav {
+	color: blue;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+	}
+}
