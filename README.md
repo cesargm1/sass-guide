@@ -72,7 +72,7 @@ nav ul li a {
 }
 ```
 
-**Usamdo nesting**
+**Usando nesting**
 
 ```scss
 nav {
@@ -119,4 +119,98 @@ nav a {
 }
 ```
 
-como podemos ver con el nesting se entiende y se ve el codigo mucho mas rapido es mas facil de leer
+Como podemos ver con el nesting se entiende y se ve el codigo mucho mas rapido y es mas facil de leer pero esta forma no es la adecuada
+
+### Usanndo el selector padre &
+
+**Un ejemplo**
+
+```vue
+<template>
+	<nav class="nav__container">
+		<a href="ejemplo">ejemplo</a>
+		<a href="ejemplo2">ejemplo</a>
+		<a href="ejemplo3">ejemplo</a>
+		<a href="ejemplo4">ejemplo</a>
+	</nav>
+</template>
+```
+
+Cundo nosotros estamos utilizando este selector & en nuestro archivo scss es una forma corta de escribir esto .nav
+
+```scss
+.nav
+```
+
+**⚠️ Es muy importante que nuestro elemento sea una clase o un id si no nunca funcionará ⚠️**
+
+Esta sería la mejor manera de escribirlo
+
+```scss
+.nav {
+	background-color: cadetblue;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		height: 80px;
+		background-color: chocolate;
+	}
+}
+```
+
+asi quedaria compilado en css
+
+```css
+.nav {
+	background-color: cadetblue;
+}
+.nav__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	width: 100%;
+	height: 80px;
+	background-color: chocolate;
+}
+```
+
+como podemos observar & hace referencia a .nav
+
+### Agrengando media query
+
+```scss
+.nav {
+	background-color: cadetblue;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		height: 80px;
+		background-color: rgb(84, 84, 220);
+	}
+	&__item {
+		text-decoration: none;
+		color: rgb(29, 29, 35);
+		font-size: 1em;
+	}
+
+	&__item:hover {
+		color: white;
+	}
+
+	@media only screen and (min-width: 800px) {
+		&__container {
+			display: flex;
+			justify-content: end;
+		}
+	}
+}
+```
