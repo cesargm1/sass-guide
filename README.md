@@ -121,7 +121,7 @@ nav a {
 
 Como podemos ver con el nesting se entiende y se ve el codigo mucho mas rapido y es mas facil de leer pero esta forma no es la adecuada
 
-### Usanndo el selector padre &
+### Usando el selector padre &
 
 **Un ejemplo**
 
