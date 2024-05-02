@@ -136,7 +136,7 @@ Como podemos ver con el nesting se entiende y se ve el codigo mucho mas rapido y
 </template>
 ```
 
-Cundo nosotros estamos utilizando este selector & en nuestro archivo scss es una forma corta de escribir esto .nav
+Cundo nosotros estamos utilizando este selector **&** en nuestro archivo scss es una forma corta de escribir
 
 ```scss
 .nav
@@ -179,7 +179,7 @@ asi quedaria compilado en css
 }
 ```
 
-como podemos observar & hace referencia a .nav
+como podemos observar **&** hace referencia a **.nav**
 
 ### Agrengando media query
 
