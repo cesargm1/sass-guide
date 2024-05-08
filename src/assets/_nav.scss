@@ -17,11 +17,13 @@
 // 	}
 // }
 
+$display: "display";
+
 .nav {
 	background-color: cadetblue;
 
 	&__container {
-		display: flex;
+		#{$display}: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 1em;

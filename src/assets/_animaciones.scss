@@ -1,0 +1,22 @@
+@use "_variables";
+.circle {
+	background-color: variables.$color-primary;
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	animation: 2s linear infinite alternate;
+}
+
+@for $iterador from 1 through 5 {
+	.circle#{$iterador} {
+		animation-name: animation#{$iterador};
+		@keyframes animation#{$iterador} {
+			100% {
+				transform: translate(50% * $iterador);
+			}
+		}
+		@if $iterador == 4 {
+			animation-direction: alternate-reverse;
+		}
+	}
+}

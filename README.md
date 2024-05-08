@@ -214,3 +214,91 @@ como podemos observar **&** hace referencia a **.nav**
 	}
 }
 ```
+
+## interpolar variables
+
+Esto se aplica a selectores y propiedades como por ejemplo un color o un selector after
+
+Este seria un ejemplo mal hecho
+
+```scss
+.nav {
+	background-color: cadetblue;
+
+	&__container {
+		$display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		height: 80px;
+		background-color: rgb(84, 84, 220);
+	}
+}
+```
+
+**Resultado**
+
+![Interpolar ejemplo mal hecho](/src/assets/interpolacion_bad_example.png)
+
+Veamos como se interpola una variable correctamente
+
+```scss
+.nav {
+	background-color: cadetblue;
+
+	&__container {
+		#{$display}: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		height: 80px;
+		background-color: rgb(84, 84, 220);
+	}
+}
+```
+
+## bucles
+
+En sass podemos hacer bucles
+
+Veamos el bucle for con un ejemplo de codigo con una animacion
+
+**este es el HTML**
+
+```html
+<section>
+	<div class="circle circle1"></div>
+	<div class="circle circle2"></div>
+	<div class="circle circle3"></div>
+	<div class="circle circle4"></div>
+	<div class="circle circle5"></div>
+</section>
+```
+
+```scss
+@use "_variables";
+.circle {
+	background-color: variables.$color-primary;
+	border-radius: 50px;
+	width: 300px;
+	height: 300px;
+	animation: 2s linear infinite alternate;
+}
+
+@for $iterador from 1 through 50 {
+	.selector-#{$iterador} {
+		color: black;
+	}
+}
+```
+
+**veamos un paso a paso**
+
+1. pondremos la regla @for
+2. definimos una variable con el nombre que queramos esta variable ira recorriendo cada iteracion del for primero sera 1 luego 2 asi hasta el numero que nosotros le indiquemos en este ejemplo sera 50
+
+3. podremos desde que numero empieza con la palabra clave **from** en este ejemplo es 1 y el numero en el que acaba. con la palabra clave **through** que en este ejemplo es 50 **esto seria la condicion** oye empieza en 1 y acaba en 50
+4. ponemos a las clases o elementos que afectara en este ejemplo es **.selector-** interpolamos la variable para que en cada vuelta del for sea 1 2 3 hasta llegar a 50
+5. ponemos la propiedad a la que afectara
