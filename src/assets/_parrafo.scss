@@ -1,0 +1,11 @@
+@use "_mixin";
+
+section{
+    width: 400px;
+    height: 400px;
+   
+    &.parrafo{
+        @include mixin.change-color;
+
+    }
+}

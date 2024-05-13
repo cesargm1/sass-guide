@@ -1,33 +1,17 @@
-.nav {
-  background-color: cadetblue;
-}
-.nav__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  width: 100%;
-  height: 80px;
-  background-color: rgb(84, 84, 220);
-}
-.nav__item {
-  text-decoration: none;
-  color: rgb(29, 29, 35);
-  font-size: 1em;
-}
-.nav__item:hover {
-  color: white;
-}
-@media only screen and (min-width: 800px) {
-  .nav__container {
-    display: flex;
-    justify-content: end;
-  }
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 9 |     @include mixin.change-color;
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src/assets/style.scss 9:2  root stylesheet */
 
-h1 {
-  color: red;
-  background-color: black;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 9 \2502      @include mixin.change-color;\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/assets/style.scss 9:2  root stylesheet";
 }
-
-/*# sourceMappingURL=style.css.map */

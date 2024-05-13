@@ -1,0 +1,12 @@
+section{
+    width: 400px;
+    height: 400px;
+   
+    &.parrafo{
+        @mixin change-color{
+            background-color: #000000;
+            color: white;
+        }
+    }
+}
+

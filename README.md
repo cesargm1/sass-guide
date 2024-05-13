@@ -1,5 +1,24 @@
 # sass Scss curso
 
+## Instalacion de sass globalmente 
+
+sass se instala con este comando hay  que tener **node.js**
+
+```bash
+npm install -g sass
+```
+
+**Asi lo tendremos instalado** 
+
+En nuestro archivo html dentro de public debemos de poner el siguente link 
+
+```html
+<link rel="stylesheet" href="/css/style.css" />
+```
+1. Despues debemos de crear una carpeta **CSS** dentro de public 
+>> **nota:** Los arvhivos de scss se crean en la carpeta assets 
+
+
 ## comando para transformar sass a css
 
 tenemos que ejecutar este comando obligatoriamente para que pueda leer el archivo scss y convertirlo a css que lo entienden los navegadores sin esto nuestros archivos scss no funcionaran como hemos dicho antes los archivos sass no los entiende el navegador por eso hay que referenciar a un archivo css tendremos que poner la ruta completa
@@ -29,7 +48,7 @@ si la ponemos al principio del documento sera una variable global
 
 ## modularizar nuestro codigo
 
-Podemos crear archivos sin que sean compilados a css para tener un codigo mas organizado para ello debemos crear un archivo de **scss** con este formato **\_variables.scss** despues en nuestro archivo sass principal debemos usar la palabra clave **use**
+Podemos crear archivos sin que sean compilados a css para tener un codigo mas organizado para ello debemos crear un archivo de **scss** con este formato **\_variables.scss** despues en nuestro archivo sass principal debemos usar la palabra clave **use** en este caso nuestro arcivo principal va a compilar el archivo que indiquemos en **@use**
 
 ```scss
 @use; _nombre de archivo sin extension;
@@ -258,7 +277,7 @@ Veamos como se interpola una variable correctamente
 	}
 }
 ```
-
+![interpolar ejemplo bien hecho](/src/assets/interpolacion_good_example.png)
 ## bucles
 
 En sass podemos hacer bucles
@@ -302,3 +321,8 @@ Veamos el bucle for con un ejemplo de codigo con una animacion
 3. podremos desde que numero empieza con la palabra clave **from** en este ejemplo es 1 y el numero en el que acaba. con la palabra clave **through** que en este ejemplo es 50 **esto seria la condicion** oye empieza en 1 y acaba en 50
 4. ponemos a las clases o elementos que afectara en este ejemplo es **.selector-** interpolamos la variable para que en cada vuelta del for sea 1 2 3 hasta llegar a 50
 5. ponemos la propiedad a la que afectara
+
+
+## mixins
+
+Los mixin son como funciones en javascript
