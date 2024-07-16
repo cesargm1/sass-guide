@@ -16,10 +16,10 @@ En nuestro archivo HTML dentro de public debemos de poner el siguiente link.
 <link rel="stylesheet" href="/css/style.css" />
 ```
 1. Después debemos de crear una carpeta **CSS** dentro de **public** 
->> **nota:** Los arvhivos de **SCSS** se crean en la carpeta **assets**.
+>> **nota:** Los archivos de **SCSS** se crean en la carpeta **assets**.
 
 
-## comando para transformar Sass a CSS
+## Cqomando para transformar Sass a CSS
 
 Tenemos que ejecutar este comando obligatoriamente para que pueda leer el archivo SCSS y convertirlo a CSS que lo entienden los navegadores sin esto nuestros archivos SCSS no funcionaran como hemos dicho antes los archivos Sass no los entiende el navegador por eso hay que referenciar a un archivo CSS tendremos que poner la ruta completa.
 
@@ -334,3 +334,8 @@ Veamos el bucle for con un ejemplo de código con una animación.
 ## mixins
 
 Los mixin son como funciones en JavaScript
+
+
+### Documentación de SASS
+
+[documentacion SASS](https://sass-lang.com/documentation/)
