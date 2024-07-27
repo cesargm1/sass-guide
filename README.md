@@ -162,8 +162,6 @@ Imaginemos que tenemos un menú de navegación.
 		<li>
 			<a href="#usuario">usuario</a>
 		</li>
-
-		<li>   </li>
 	</ul>
 </nav>
 ```
