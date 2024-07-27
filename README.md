@@ -112,7 +112,7 @@ Podemos crear archivos sin que sean compilados a CSS para tener un código más 
 @use; _nombre de archivo sin extension;
 ```
 
-### veamos otro ejemplo
+### Ejemplo
 
 Tenemos un caso especial imagina que definimos un archivo con todas las variables **\_variables.scss** nosotros usamos el módulo **@use \_nombre del archivo** y colocamos las variables en los atributos css que queramos, pero hay un problema no se aplicarán las variables porque nuestro módulo es de variables para poder utilizarlo usamos la siguiente sintaxis.
 
