@@ -129,9 +129,9 @@ Luego, en el archivo principal de **SCSS** usaremos el siguiente código.
 @use "_variables"; // usamos el archivo de variables en nuestro scss principal
 
 h1 {
-    color: variables.$color-text; // para acceder a la variable ponemos el nombre del fichero.$variable
+ color: variables.$color-text; // para acceder a la variable ponemos el nombre del fichero.$variable
 
-    background-color: variables.$color-primary;
+ background-color: variables.$color-primary;
 }
 ```
 
