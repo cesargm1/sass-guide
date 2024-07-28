@@ -386,6 +386,8 @@ $display: "display";
 ### Este sería un ejemplo mal hecho
 
 ```scss
+$display: "display";
+
 .nav {
 	background-color: cadetblue;
 
@@ -408,6 +410,8 @@ $display: "display";
 ### Veamos como se interpola una variable correctamente
 
 ```scss
+$display: "display";
+
 .nav {
 	background-color: cadetblue;
 
