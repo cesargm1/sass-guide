@@ -58,11 +58,11 @@ Tenemos que ejecutar este comando obligatoriamente para que pueda leer el archiv
 
 ## ¿Qué hace este comando?
 
-### primera función del comando scompilar los archivos scss
-
 Este comando observa los cambios de nuestros archivos en SCSS que se encuentran en la carpeta **src/assets** y los compila a CSS en la carpeta **public/css**
 
-Al ejecutar este comando, se crea la carpeta **CSS** dentro de **public** con archivos CSS. Cada archivo CSS tendrá el mismo nombre que el archivo SCSS correspondiente, pero con la extensión .css.
+### primera función del comando compilar los archivos scss
+
+Al ejecutar este comando, se crean desntro de la carpeta **public/CSS** los siguentes archivos un archivo **sourcemap** que explicaremos mas adelante y un archivo **CSS** este ultimo tendrá el mismo nombre que el archivo SCSS correspondiente, pero con la extensión .css que servira para compilar el codigo de **SCSS** a **CSS**.
 
 #### Ejemplos
 
