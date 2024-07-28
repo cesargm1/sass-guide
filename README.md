@@ -193,25 +193,26 @@ Pero tardaremos mucho escribiendo todos esos estilos, podemos ahorrarnos muchas 
 
 ```scss
 nav {
-    background-color: rgb(190, 151, 227);
+	background-color: rgb(190, 151, 227);
 
-    ul {
-        display: flex;
-        justify-content: center;
-        gap: 1em;
-    }
+	ul {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+	}
 
-    li {
-        list-style: none;
-    }
+	li {
+		list-style: none;
+	}
 
-    a {
-        text-decoration: none;
-    }
+	a {
+		text-decoration: none;
+	}
 }
+
 ```
 
-Ahora le decimos que el **nav** tendrá un color de fondo verde. Dentro del nav está el elemento **ul** con un **display flex  justify-content: center y un  gap: 1em;**
+Ahora le decimos que el **nav** tendrá un color de fondo morado claro. Dentro del nav está el elemento **ul** con un **display flex  justify-content: center y un  gap: 1em;**
 dentro de ese hay un elemento **li** le quitamos el estilo de lista por ultimo hay un elemento **a** con un **text-decoration: none.**
 
 De esta manera, nuestro SCSS quedará mucho más limpio.
