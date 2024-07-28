@@ -169,22 +169,22 @@ Queremos darle estilo a todo el menú, así lo hacemos con CSS.
 
 ```css
 nav {
-    background-color: rgb(190, 151, 227);
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-ul li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
+     background-color: rgb(190, 151, 227);
+    }
+    
+    nav ul {
+    display: flex;
+     justify-content: center;
+     gap: 1em;
+    }
+    
+    ul li {
+     list-style: none;
+    }
+    
+    a {
+     text-decoration: none;
+    }
 ```
 
 Pero tardaremos mucho escribiendo todos esos estilos, podemos ahorrarnos muchas líneas de código usando el nesting
