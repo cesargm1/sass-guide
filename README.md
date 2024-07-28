@@ -209,7 +209,6 @@ nav {
 		text-decoration: none;
 	}
 }
-
 ```
 
 Ahora le decimos que el **nav** tendrá un color de fondo morado claro. Dentro del nav está el elemento **ul** con un **display flex  justify-content: center y un  gap: 1em;**
