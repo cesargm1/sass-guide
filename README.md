@@ -71,7 +71,7 @@ Al ejecutar este comando, se crean dentro de la carpeta **public/CSS** los sigui
 
 - Si nuestro archivo se llama **pepe.scss** se transformará a **pepe.css**
 
-### segunda funcón del comando Archivo css.map
+### segunda función del comando Archivo css.map
 
 Los sourcemaps son una especie de mapa que vincula el código fuente original con el código generado.
 
