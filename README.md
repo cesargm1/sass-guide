@@ -18,6 +18,8 @@ npm install -g sass
 
 **Ahora podemos comenzar a usar SASS**
 
+> nota: Los archivos de **SASS** se crean en la carpeta assets con la extesión **SCSS** vamos a crear nuestro primer archivo.
+
 ## Uso de la etiqueta link
 
 En nuestro archivo HTML dentro de public debemos de poner el siguiente link para que SCSS se pueda compilar a CSS.
@@ -45,8 +47,6 @@ si nuestro archivo se llama footer, tendríamos que poner este link
 > Dependiendo de nuestro archivo SCSS nuestro archivo css tendra un nombre u otro
 
 1. Después debemos de crear una carpeta **CSS** dentro de **public**
-
-> **nota:** Los archivos de **SCSS** se crean en la carpeta **assets**.
 
 ## Comando para transformar Sass a CSS
 
