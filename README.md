@@ -154,16 +154,15 @@ Imaginemos que tenemos un menú de navegación.
 
 ```html
 <nav>
-	<ul>
-		<li>
-			<a href="#home">home</a>
-		</li>
-		       
-		<li>
-			<a href="#usuario">usuario</a>
-		</li>
-	</ul>
-</nav>
+		<ul>
+			<li>
+				<a href="#home">home</a>
+			</li>
+			<li>
+				<a href="#usuario">usuario</a>
+			</li>
+		</ul>
+	</nav>
 ```
 
 Queremos darle estilo a todo el menú, así lo hacemos con CSS.
