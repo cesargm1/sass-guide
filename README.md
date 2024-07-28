@@ -268,21 +268,23 @@ Pero nos ahorraremos más líneas todavía usando el selector padre **&** combin
 
 ```scss
 .nav {
-    background-color: cadetblue;
+	background-color: cadetblue;
 
-    &__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
-        width: 100%;
-        height: 80px;
-        background-color: chocolate;
-    }
-    &__link {
-        text-decoration: none;
-    }
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		height: 80px;
+		background-color: chocolate;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
 }
+
 ```
 
 Así se compila a css
