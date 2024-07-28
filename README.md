@@ -18,7 +18,7 @@ npm install -g sass
 
 **Ahora podemos comenzar a usar SASS**
 
-> nota: Los archivos de **SASS** se crean en la carpeta assets con la extesión **SCSS** vamos a crear nuestro primer archivo.
+> nota: Los archivos de **SASS** se crean en la carpeta assets con la extesión **SCSS** vamos a crear nuestro primer archivo que se llamara **style.scss**.
 
 ## Uso de la etiqueta link
 
