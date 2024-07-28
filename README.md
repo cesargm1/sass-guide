@@ -62,7 +62,7 @@ Este comando observa los cambios de nuestros archivos en SCSS que se encuentran 
 
 ### primera función del comando compilar los archivos scss
 
-Al ejecutar este comando, se crean desntro de la carpeta **public/CSS** los siguentes archivos un archivo **sourcemap** que explicaremos mas adelante y un archivo **CSS** este ultimo tendrá el mismo nombre que el archivo SCSS correspondiente, pero con la extensión .css que servira para compilar el codigo de **SCSS** a **CSS**.
+Al ejecutar este comando, se crean dentro de la carpeta **public/CSS** los siguientes archivos un archivo **sourcemap** que explicaremos más adelante y un archivo **CSS** este último tendrá el mismo nombre que el archivo SCSS correspondiente, pero con la extensión .css que servirá para compilar el código de **SCSS** a **CSS**.
 
 #### Ejemplos
 
