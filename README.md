@@ -367,12 +367,14 @@ La interpolación es una característica de SASS que nos permite colocar dentro 
 ```html
 <template>
 	<nav class="nav__container">
-		 <a class="nav__item" href="ejemplo">ejemplo</a>        
-		<a class="nav__item" href="ejemplo2">ejemplo</a>        
-		<a class="nav__item" href="ejemplo3">ejemplo</a>        
-		<a class="nav__item--active" href="ejemplo4">ejemplo</a>    
+		<a class="nav__item" href="ejemplo">ejemplo</a>
+		<a class="nav__item" href="ejemplo2">ejemplo</a>
+		<a class="nav__item" href="ejemplo3">ejemplo</a>
+		<a class="nav__item--active" href="ejemplo4">ejemplo</a>
 	</nav>
 </template>
+
+
 ```
 
 2. Debemos poner el nombre de la variable en donde hagamos la interpolación.
