@@ -326,35 +326,36 @@ Partimos de este ejemplo
 
 ```scss
 .nav {
-     background-color: cadetblue;
-    
-     &__container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 1em;
-     width: 100%;
-     height: 80px;
-     background-color: rgb(84, 84, 220);
-     }
+	background-color: cadetblue;
 
-     &__item {
-     text-decoration: none;
-     color: rgb(29, 29, 35);
-     font-size: 1em;
-     }
-    
-     &__item:hover {
-     color: white;
-     }
-    
-     @media only screen and (min-width: 800px) {
-     &__container {
-     display: flex;
-     justify-content: end;
-     }
-     }
-    }
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		height: 80px;
+		background-color: rgb(84, 84, 220);
+	}
+
+	&__item {
+		text-decoration: none;
+		color: rgb(29, 29, 35);
+		font-size: 1em;
+	}
+
+	&__item:hover {
+		color: white;
+	}
+
+	@media only screen and (min-width: 800px) {
+		&__container {
+			display: flex;
+			justify-content: end;
+		}
+	}
+}
+
 ```
 
 ## interpolar variables
