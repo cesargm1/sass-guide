@@ -248,10 +248,10 @@ Como podemos ver, con el nesting, se entiende y se ve el código mucho más clar
 ```html
 <template>
 	<nav class="nav__container">
-		<a class="nav__link" href="ejemplo">ejemplo</a>  
-		<a class="nav__link" href="ejemplo2">ejemplo</a> 
+		<a class="nav__link" href="ejemplo">ejemplo</a>
+		<a class="nav__link" href="ejemplo2">ejemplo</a>
 		<a class="nav__link" href="ejemplo3">ejemplo</a>
-		<a class="nav__link" href="ejemplo4">ejemplo</a>    
+		<a class="nav__link" href="ejemplo4">ejemplo</a>
 	</nav>
 </template>
 ```
