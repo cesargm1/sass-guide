@@ -109,7 +109,8 @@ Podemos crear archivos sin que sean compilados a CSS para tener un código más 
 ### Sintaxis
 
 ```scss
-@use; _nombre de archivo sin extension;
+@use "_nombre de archivo sin extension";
+O si esta en una carpeta diferente @use "_nombre de la ruta hasta llegar al archivo sin extension"
 ```
 
 ### Ejemplo
