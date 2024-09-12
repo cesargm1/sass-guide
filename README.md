@@ -46,19 +46,33 @@ si nuestro archivo se llama footer, tendríamos que poner este link
 
 > Dependiendo de nuestro archivo SCSS nuestro archivo css tendra un nombre u otro
 
-1. Después debemos de crear una carpeta **CSS** dentro de **public**
-
 ## Comando para transformar Sass a CSS
 
 ```bash
  sass --watch src/assets:public/css
 ```
 
+> Este comando puede tener otra ruta si lo creamos en la carpeta assets omitiendo la carpeta src el comando para tranformar quedaria asi
+
+```bash
+ sass --watch src/assets:public/css
+```
+
+La sintaxis es la siguente 
+
+
+ sass --watch ruta del archivo scss:carpeta que compilara scss a css 
+
+
 Tenemos que ejecutar este comando obligatoriamente para que pueda leer el archivo SCSS y convertirlo a CSS que lo entienden los navegadores sin esto nuestros archivos SCSS no funcionaran como hemos dicho antes los archivos Sass no los entiende el navegador por eso hay que referenciar a un archivo CSS tendremos que poner la ruta completa.
 
 ## ¿Qué hace este comando?
 
-Este comando observa los cambios de nuestros archivos en SCSS que se encuentran en la carpeta **src/assets** y los compila a CSS en la carpeta **public/css**
+Este comando observa los cambios de nuestros archivos en SCSS que se encuentran en la carpeta **src/assets** y los compila a CSS en la carpeta **public/css** esta carpeta nos la crea automaticamente al ejecutar este  comando 
+
+```bash
+ sass --watch src/assets:public/css
+```
 
 ### primera función del comando compilar los archivos scss
 
