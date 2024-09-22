@@ -22,7 +22,7 @@ npm install -g sass
 
 ## Uso de la etiqueta link
 
-En nuestro archivo HTML dentro de public debemos de poner el siguiente link para que SCSS se pueda compilar a CSS.
+En nuestro archivo HTML, en la etiqueta link  hay que poner la ruta completa hasta llegar a nuestro archivo CSS. Luego esta ruta se usará para compilar nuestro SCSS a CSS. Esto lo explicaré con un ejemplo más adelante en el que   se verá cómo se hace la sintaxis de una manera más visual.
 
 ```html
 <link rel="stylesheet" href="/css/style.css" />
@@ -45,6 +45,7 @@ si nuestro archivo se llama footer, tendríamos que poner este link
 ```
 
 > Dependiendo de nuestro archivo SCSS nuestro archivo css tendra un nombre u otro
+ Es muy importante poner la ruta completa o relativa hasta nuestro fichero css 
 
 ## Comando para transformar Sass a CSS
 
@@ -61,7 +62,7 @@ si nuestro archivo se llama footer, tendríamos que poner este link
 La sintaxis es la siguente 
 
 
- sass --watch ruta del archivo scss:carpeta que compilara scss a css 
+ sass --watch ruta hasta llegar al archivo scss:carpeta que compilara scss a css 
 
 
 Tenemos que ejecutar este comando obligatoriamente para que pueda leer el archivo SCSS y convertirlo a CSS que lo entienden los navegadores sin esto nuestros archivos SCSS no funcionaran como hemos dicho antes los archivos Sass no los entiende el navegador por eso hay que referenciar a un archivo CSS tendremos que poner la ruta completa.
